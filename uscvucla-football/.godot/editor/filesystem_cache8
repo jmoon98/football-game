@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1727473353
+field.jpg::CompressedTexture2D::1516922834863793064::1727473256::1727473353::1::::<><>::
+football.gd::GDScript::-1::1727473256::0::1::::<>CharacterBody2D<>::
+football.tscn::PackedScene::7196192739198668892::1727473256::0::1::::<><>::res://football.gd<>uid://dhdijlhge3mte::::res://sprites/football.png
+icon.svg::CompressedTexture2D::2564471355454913040::1727473256::1727473353::1::::<><>::
+test.tscn::PackedScene::6587628731456242439::1727473256::0::1::::<><>::uid://cxqtcpag3hu6t::::res://characters/player.tscn<>uid://vu2q6cmnrntw::::res://field.jpg<>uid://dar5ii7mai42s::::res://football.tscn
+::res://characters/::1727473256
+player.gd::GDScript::-1::1727473256::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::6421372797736857401::1727473256::0::1::::<><>::uid://bff7mech7mrnn::::res://sprites/uscplayer_idle.png<>res://characters/player.gd
+::res://sprites/::1727473884
+arrow1.png::CompressedTexture2D::3012074173019883408::1727473884::1727473885::1::::<><>::
+football.png::CompressedTexture2D::7657279486744540378::1727473256::1727473353::1::::<><>::
+uscplayer_idle.png::CompressedTexture2D::2749651377493259339::1727473256::1727473353::1::::<><>::
