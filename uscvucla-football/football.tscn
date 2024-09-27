@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dar5ii7mai42s"]
+
+[ext_resource type="Script" path="res://football.gd" id="1_7j741"]
+[ext_resource type="Texture2D" uid="uid://dhdijlhge3mte" path="res://sprites/football.png" id="1_n7rs2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ndr2n"]
+radius = 20.0249
+height = 57.8379
+
+[node name="Football" type="CharacterBody2D"]
+script = ExtResource("1_7j741")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+rotation = -0.785398
+scale = Vector2(3, 3)
+texture = ExtResource("1_n7rs2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.55826
+shape = SubResource("CapsuleShape2D_ndr2n")

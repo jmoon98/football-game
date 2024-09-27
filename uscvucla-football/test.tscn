@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c04dju357r4ch"]
+
+[ext_resource type="PackedScene" uid="uid://cxqtcpag3hu6t" path="res://characters/player.tscn" id="1_ev5nu"]
+[ext_resource type="Texture2D" uid="uid://vu2q6cmnrntw" path="res://field.jpg" id="1_m2xk1"]
+[ext_resource type="PackedScene" uid="uid://dar5ii7mai42s" path="res://football.tscn" id="2_ew0h4"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(140, -292)
+scale = Vector2(4.77, 4.77)
+texture = ExtResource("1_m2xk1")
+
+[node name="Player" parent="." instance=ExtResource("1_ev5nu")]
+position = Vector2(271, 325)
+scale = Vector2(4, 4)
+
+[node name="Football" parent="." instance=ExtResource("2_ew0h4")]
+position = Vector2(346, 321)
+
+[connection signal="throw_ball" from="Player" to="Football" method="_on_player_throw_ball"]
