@@ -1,1 +1,5 @@
-res://test.tscn
+res://scenes/test.tscn
+res://scenes/football.tscn
+res://scenes/throw_arrow.tscn
+res://scripts/throw_arrow.gd
+res://scripts/football.gd

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://c04dju357r4ch"]
+
+[ext_resource type="Texture2D" uid="uid://vu2q6cmnrntw" path="res://sprites/field.jpg" id="1_a5fmu"]
+[ext_resource type="PackedScene" uid="uid://cxqtcpag3hu6t" path="res://scenes/player.tscn" id="2_dx1fj"]
+[ext_resource type="PackedScene" uid="uid://dar5ii7mai42s" path="res://scenes/football.tscn" id="3_bwlbk"]
+[ext_resource type="PackedScene" uid="uid://biwxr5p2r81vh" path="res://scenes/throw_arrow.tscn" id="4_cb74x"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(140, -292)
+scale = Vector2(4.77, 4.77)
+texture = ExtResource("1_a5fmu")
+
+[node name="Player" parent="." instance=ExtResource("2_dx1fj")]
+position = Vector2(271, 325)
+scale = Vector2(4, 4)
+
+[node name="Football" parent="." instance=ExtResource("3_bwlbk")]
+position = Vector2(346, 321)
+
+[node name="Throw_Arrow" parent="." instance=ExtResource("4_cb74x")]
+position = Vector2(344, 322)
+
+[connection signal="throw_ball" from="Player" to="Football" method="_on_player_throw_ball"]
+[connection signal="throw_ball" from="Player" to="Throw_Arrow" method="_on_player_throw_ball"]
